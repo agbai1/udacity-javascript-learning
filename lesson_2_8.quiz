@@ -1,0 +1,16 @@
+## Programming Quiz: Converting Tempatures (2-2)
+
+* The Celsius-to-Fahrenheit formula:
+
+* Directions:
+Use this equation and the variables fahrenheit and celsius to print the Fahrenheit equivalent of 12°C.
+
+F = C x 1.8 + 32 
+
+* The code for this will be
+
+`var celcius = 12;`
+`var fahrenheit = (celcuis * 1.8) + 32;`
+
+`console.log(fahrenheit);`
+
