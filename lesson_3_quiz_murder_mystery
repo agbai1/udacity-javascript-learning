@@ -21,7 +21,7 @@ if (room === "ballroom" && suspect === "Mr. Kalehoff") {
 	console.log("The murder can't be solved at the moment!");
 } 
 
-
+console.log(solved);
 
 if (solved){
 	message = suspect + " did it in the " + room + " with the " + weapon + "!";
