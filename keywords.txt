@@ -14,3 +14,5 @@ Other special characters
 \t	tab
 
 `varName.toFixed(2)` - rounds to 2 decimal places
+
+* ***short-circuiting*** describes he event when later arguments in a logical expression are not considered because the first argument already satisfies the condition.
