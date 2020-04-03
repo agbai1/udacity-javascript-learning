@@ -1,26 +1,22 @@
 
+var balance = -2;	// stores account balance as integer
+var checkBalance = true;	// stores answer to check balance question as boolean
+var isActive = true;	// stores account active choice as boolean
 
-var checkBalance = prompt("Would you like to use the ATM to check your balance? \nEnter True for yes or False for no ");
-checkBalance = checkBalance.toLowerCase(); //makes checkBalance lowercase
 
-if (checkBalance === "true") {
-	var balance = prompt("What is your account balance: ");
-
-	var isActive = prompt("Is  your account active?: ");
-	isActive = active.toLowerCase(); //make active lowercase
-}
-
-if (checkBalance === "true") {
-	if (isActive === "yes" && balance > 0) {
-		console.log("Your balance is $" + balance.toFixed(2) + ".");
-	} else if (isActive !== "yes") {
-		console.log("Your account is no longer active");
-	} else if (balance === 0) {
-		console.log("Your account is empty.");
-	} else {
-		console.log("Your balance is negative. Please contact bank.");
-	}
-	
-} else {
+if (checkBalance && isActive === true && balance > 0) {
+	// true if the customers wants to check balance and acount is active and balance is > 0
+	console.log("Your balance is $" + balance.toFixed(2) + ".");
+} else if (checkBalance && isActive === false) { 
+	// true if account is inactive
+	console.log("Your account is no longer active");
+} else if (checkBalance && balance === 0) { 
+	// true is balance is 0
+	console.log("Your account is empty.");
+} else if (checkBalance && balance < 0) { 
+	// true if account has a negative balance
+	console.log("Your balance is negative. Please contact bank.");	
+} else { 
+	// true is customer doesn't want to check balance
 	console.log("Thank you. Have a nice day!");
 }
