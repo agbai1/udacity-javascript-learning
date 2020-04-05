@@ -29,7 +29,6 @@ if (eatsPlants && eatsAnimals) {
 	console.log(undefined);
 }
 
-
-var category = eatsPlants ? eatsAnimals ? "omnivore" : "herbivore" : eatsAnimals ? "carnivore" : undefined; 
+var category = eatsPlants && eatsAnimals ? "omnivore" : ( eatsPlants ? "herbivore" : ( eatsAnimals ? "carnivore" : undefined ) );
 
 console.log(category);
