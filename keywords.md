@@ -33,3 +33,25 @@ console.log(color);
 can be rewritten as
 `var color = isGoing ? "green" : "red";
 			conditional ? (if condition is true) : (if condition is false)`
+
+* Truthy and Falsy
+	* Truthy
+	A value is truthy if it converts to true when evaluated in a boolean context
+	e.g.
+```
+if (1) {
+    console.log("the value is truthy");
+} else {
+    console.log("the value is falsy");
+}
+```
+	* Falsy
+	A value is falsy if it converts to false when evaluated in a boolean context.
+	e.g.
+```
+if ("") {
+    console.log("the value is truthy");
+} else {
+    console.log("the value is falsy");
+}
+```
