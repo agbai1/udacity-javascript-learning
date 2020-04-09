@@ -26,5 +26,5 @@ let triangle = "";
   }
   return triangle;					// returns of stacked lines which forms the triangle
 }
-
-console.log(buildTriangle(10));
+var triangle = buildTriangle(10);
+console.log(triangle);
