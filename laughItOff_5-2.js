@@ -10,7 +10,8 @@ function laugh(num) {
          message += "ha";
      }
      message += "!";
-     return message;
+     console.log("Printing: laugh was called and " + num + " was passed in as an argument.");
+     return "Returning: I am returning this string: " + message;
  }
 
-console.log(laugh(4));
+laugh(4);
